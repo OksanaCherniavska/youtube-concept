@@ -16,6 +16,11 @@
   padding-left: 32px;
   padding-right: 70px;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #fff;
 }
 
 .menu-button {
@@ -102,7 +107,22 @@
 }
 
 .sidebar {
+  position: fixed;
+  left: 0px;
+  top: 114px;
+  height: calc(100% - 114px);
+  overflow-y: auto;
+  width: 19%;
   padding-left: 32px;
+  background-color: #fff;
+}
+
+.content {
+  width: 100%;
+  height: 400px;
+  margin-top: 85px;
+  padding-left: 20%;
+  padding-top: 30px;
 }
 
 .nav-menu {
@@ -149,4 +169,100 @@
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 30px;
+}
+
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.channel-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+}
+
+.channel-text {
+  margin-left: 20px;
+}
+
+.channel-slider {
+  display: flex;
+}
+.swiper-slide {
+  display: flex;
+}
+
+.video-card {
+  width: 250px;
+}
+
+.video-thumb {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+
+.thumbnail {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  mix-blend-mode: normal;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  padding: 3px 9px;
+}
+
+.video-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+
+.video-counter {
+  display: flex;
+}
+
+.video-views {
+  margin-right: 8px;
+}
+
+.video-views:after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
 }
